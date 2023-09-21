@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import sg.ntu.edu.simpleplayerstats.entity.Statistic;
 import sg.ntu.edu.simpleplayerstats.service.StatisticService;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +17,6 @@ import java.util.List;
 @RequestMapping("/statistic")
 public class StatisticController {
 
-    private static final Logger logger = LoggerFactory.getLogger(StatisticController.class);
     
     @Autowired
     private StatisticService statisticService;
@@ -69,12 +66,5 @@ public class StatisticController {
         logger.info("Deleting statistic with ID: {}", id);
         statisticService.deleteStatistic(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-    }
-    public static void main(String[] args) {
-        logger.info("🟢 Starting Soccer Stats API");
-        logger.debug("❓ Debugging information: {}", someVariable);
-        logger.warn("🟠 Test Warning");
-        logger.error("🔴 Error Warning");
-        SpringApplication.run(PlayerController.class, args);
     }
 }

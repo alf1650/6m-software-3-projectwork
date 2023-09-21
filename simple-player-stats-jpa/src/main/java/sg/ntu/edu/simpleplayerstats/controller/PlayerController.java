@@ -11,8 +11,6 @@ import sg.ntu.edu.simpleplayerstats.entity.Player;
 import sg.ntu.edu.simpleplayerstats.entity.Statistic;
 import sg.ntu.edu.simpleplayerstats.service.PlayerService;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,8 +21,6 @@ import java.util.List;
 @RequestMapping("/players")
 @AllArgsConstructor
 public class PlayerController {
-
-    private static final Logger logger = LoggerFactory.getLogger(PlayerController.class);
 
     private PlayerService playerService;
 
@@ -73,11 +69,5 @@ public class PlayerController {
         return new ResponseEntity<>(newStatistic, HttpStatus.CREATED);
     }
 
-    public static void main(String[] args) {
-        logger.info("🟢 Starting Soccer Stats API");
-        logger.debug("❓ Debugging information: {}", someVariable);
-        logger.warn("🟠 Test Warning");
-        logger.error("🔴 Error Warning");
-        SpringApplication.run(PlayerController.class, args);
     }
 }
