@@ -1,5 +1,7 @@
 package sg.ntu.edu.simpleplayerstats.controller;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +11,11 @@ import sg.ntu.edu.simpleplayerstats.entity.Player;
 import sg.ntu.edu.simpleplayerstats.entity.Statistic;
 import sg.ntu.edu.simpleplayerstats.service.PlayerService;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import javax.validation.Valid;
 import java.util.List;
 
@@ -16,6 +23,8 @@ import java.util.List;
 @RequestMapping("/players")
 @AllArgsConstructor
 public class PlayerController {
+
+    private static final Logger logger = LoggerFactory.getLogger(PlayerController.class);
 
     private PlayerService playerService;
 
@@ -62,5 +71,13 @@ public class PlayerController {
             @RequestBody Statistic statistic) {
         Statistic newStatistic = playerService.addStatisticToPlayer(id, statistic);
         return new ResponseEntity<>(newStatistic, HttpStatus.CREATED);
+    }
+
+    public static void main(String[] args) {
+        logger.info("🟢 Starting Soccer Stats API");
+        logger.debug("❓ Debugging information: {}", someVariable);
+        logger.warn("🟠 Test Warning");
+        logger.error("🔴 Error Warning");
+        SpringApplication.run(PlayerController.class, args);
     }
 }
