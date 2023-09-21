@@ -12,11 +12,13 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import sg.ntu.edu.simpleplayerstats.entity.Player;
+
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class CustomerControllerTest {
+public class PlayerControllerTest {
 
   @Autowired
   private MockMvc mockMvc;
@@ -24,11 +26,11 @@ public class CustomerControllerTest {
   @Autowired
   private ObjectMapper objectMapper;
 
-  @DisplayName("Get customer by Id")
+  @DisplayName("Get player by Id")
   @Test
-  public void getCustomerByIdTest() throws Exception {
+  public void getPlayerByIdTest() throws Exception {
     // Step 1: Build a request
-    RequestBuilder request = MockMvcRequestBuilders.get("/customers/1");
+    RequestBuilder request = MockMvcRequestBuilders.get("/players/1");
 
     // Step 2: Perform the request, get the response and assert
     mockMvc.perform(request)
@@ -42,9 +44,9 @@ public class CustomerControllerTest {
   }
 
   @Test
-  public void getAllCustomersTest() throws Exception {
+  public void getAllPlayersTest() throws Exception {
     // Step 1: Build a GET request to /customers
-    RequestBuilder request = MockMvcRequestBuilders.get("/customers");
+    RequestBuilder request = MockMvcRequestBuilders.get("/players");
 
     // Step 2: Perform the request, get the response and assert
     mockMvc.perform(request)
@@ -52,21 +54,28 @@ public class CustomerControllerTest {
         .andExpect(status().isOk())
         // Assert that the content is JSON
         .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-        // Assert that the size of the response is 3
-        .andExpect(jsonPath("$.size()").value(3));
+        // Assert that the size of the response is 5
+        .andExpect(jsonPath("$.size()").value(5));
   }
 
   @Test
-  public void validCustomerCreationTest() throws Exception {
-    // Step 1: Create a Customer object
-    Customer customer = Customer.builder().firstName("Clint").lastName("Barton").email("clint@avengers.com")
-        .contactNo("12345678").jobTitle("Special Agent").yearOfBirth(1975).build();
+  public void validPlayerCreationTest() throws Exception {
+    // Step 1: Create a Player object
+
+    Player player = Player.builder()
+        .firstName("Alfred")
+        .lastName("Lim")
+        .footballclub("Singapore Team")
+        .playerposition("Middlefield")
+        .age(46)
+        .nationality("Singaporean")
+        .build();
 
     // Step 2: Convert the Java objec to JSON using ObjectMapper
-    String newCustomerAsJSON = objectMapper.writeValueAsString(customer);
+    String newCustomerAsJSON = objectMapper.writeValueAsString(player);
 
     // Step 3: Build the request
-    RequestBuilder request = MockMvcRequestBuilders.post("/customers")
+    RequestBuilder request = MockMvcRequestBuilders.post("/players")
         .contentType(MediaType.APPLICATION_JSON)
         .content(newCustomerAsJSON);
 
@@ -74,23 +83,26 @@ public class CustomerControllerTest {
     mockMvc.perform(request)
         .andExpect(status().isCreated())
         .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-        .andExpect(jsonPath("$.id").value(4))
-        .andExpect(jsonPath("$.firstName").value("Clint"))
-        .andExpect(jsonPath("$.lastName").value("Barton"));
+        .andExpect(jsonPath("$.id").value(6))
+        .andExpect(jsonPath("$.firstName").value("Alfred"))
+        .andExpect(jsonPath("$.lastName").value("Lim"));
   }
 
   @Test
-  public void invalidCustomerCreationTest() throws Exception {
+  public void invalidPlayerCreationTest() throws Exception {
     // Step 1: Create a Customer with invalid fields
-    Customer invalidCustomer = Customer.builder().firstName("Clint").lastName("Barton").email("clint")
-        .contactNo("12345678").jobTitle("Special Agent").yearOfBirth(1975).build();
+
+    Player invalidPlayer = Player.builder()
+        .firstName("AAA")
+        .lastName("BBB")
+        .build();
 
     // Step 2: Convert the Java object to JSON
-    String invalidCustomerAsJSON = objectMapper.writeValueAsString(invalidCustomer);
+    String invalidPlayerAsJSON = objectMapper.writeValueAsString(invalidPlayer);
 
     // Step 3: Build the request
-    RequestBuilder request = MockMvcRequestBuilders.post("/customers").contentType(MediaType.APPLICATION_JSON)
-        .content(invalidCustomerAsJSON);
+    RequestBuilder request = MockMvcRequestBuilders.post("/players").contentType(MediaType.APPLICATION_JSON)
+        .content(invalidPlayerAsJSON);
 
     // Step 4: Perform the request and get the response and assert
     mockMvc.perform(request)

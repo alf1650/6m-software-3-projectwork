@@ -45,7 +45,7 @@ public class Statistic {
   @PastOrPresent(message = "Match date should not be in the future")
   private LocalDate matchDate;
 
-  @ManyToOne
+  @ManyToOne(optional = false)
   @JoinColumn(name = "player_id", referencedColumnName = "id")
   private Player player;
 
