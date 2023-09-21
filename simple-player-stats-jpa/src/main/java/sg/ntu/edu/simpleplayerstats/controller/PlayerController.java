@@ -75,7 +75,7 @@ public class PlayerController {
 
     public static void main(String[] args) {
         logger.info("🟢 Starting Soccer Stats API");
-        logger.debug("❓ Debugging information: {}", someVariable);
+        logger.debug("❓ An exception occurred");
         logger.warn("🟠 Test Warning");
         logger.error("🔴 Error Warning");
         SpringApplication.run(PlayerController.class, args);

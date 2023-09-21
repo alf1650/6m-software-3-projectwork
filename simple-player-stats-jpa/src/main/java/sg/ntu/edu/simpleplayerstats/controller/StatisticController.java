@@ -1,6 +1,7 @@
 package sg.ntu.edu.simpleplayerstats.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -72,7 +73,7 @@ public class StatisticController {
     }
     public static void main(String[] args) {
         logger.info("🟢 Starting Soccer Stats API");
-        logger.debug("❓ Debugging information: {}", someVariable);
+        logger.debug("❓ An exception occurred");
         logger.warn("🟠 Test Warning");
         logger.error("🔴 Error Warning");
         SpringApplication.run(PlayerController.class, args);

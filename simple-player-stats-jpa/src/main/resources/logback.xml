@@ -6,7 +6,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.example" level="INFO"/> <!-- Set the desired package for logging -->
+    <logger name="sg.ntu.edu.simpleplayerstats" level="INFO"/> <!-- Set the desired package for logging -->
     
     <root level="INFO">
         <appender-ref ref="console"/>

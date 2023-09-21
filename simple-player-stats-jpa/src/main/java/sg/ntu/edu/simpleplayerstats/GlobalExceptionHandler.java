@@ -17,22 +17,7 @@ import sg.ntu.edu.simpleplayerstats.exception.StatisticNotFoundException;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-  // SPECIFIC EXCEPTION HANDLERS
-  // @ExceptionHandler(CustomerNotFoundException.class)
-  // public ResponseEntity<ErrorResponse>
-  // handleCustomerNotFoundExcetion(CustomerNotFoundException ex) {
-  // ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(),
-  // LocalDateTime.now());
-  // return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
-  // }
 
-  // @ExceptionHandler(InteractionNotFoundException.class)
-  // public ResponseEntity<ErrorResponse>
-  // handleInteractionNotFoundExcetion(InteractionNotFoundException ex) {
-  // ErrorResponse errorResponse = new ErrorResponse(ex.getMessage(),
-  // LocalDateTime.now());
-  // return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
-  // }
 
   @ExceptionHandler({PlayerNotFoundException.class, StatisticNotFoundException.class })
   public ResponseEntity<ErrorResponse> handleResourceNotFoundException(Exception ex) {

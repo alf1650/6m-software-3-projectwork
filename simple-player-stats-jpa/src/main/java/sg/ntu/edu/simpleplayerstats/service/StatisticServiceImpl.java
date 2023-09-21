@@ -37,6 +37,8 @@ public class StatisticServiceImpl implements StatisticService {
                 .orElseThrow(() -> new StatisticNotFoundException(id));
         statisticToUpdate.setGoals(statistic.getGoals());
         statisticToUpdate.setMatchDate(statistic.getMatchDate());
+        statisticToUpdate.setOpposition(statistic.getOpposition());
+        statisticToUpdate.setAssists(statistic.getAssists());
         return statisticRepository.save(statisticToUpdate);
     }
 
