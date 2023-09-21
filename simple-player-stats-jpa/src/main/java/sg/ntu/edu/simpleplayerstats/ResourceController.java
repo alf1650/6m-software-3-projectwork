@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 // @ResponseBody
 
 @RestController 
-
-public class HomeController {
+public class ResourceController {
     @GetMapping("/home")
-    public String home() {
+    public String homeEndpoint() {
       return "home";
     }
 
