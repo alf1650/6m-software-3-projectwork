@@ -8,23 +8,24 @@ import org.springframework.web.bind.annotation.*;
 import sg.ntu.edu.simpleplayerstats.entity.Statistic;
 import sg.ntu.edu.simpleplayerstats.service.StatisticService;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 @RestController
 @RequestMapping("/statistic")
 public class StatisticController {
 
-    
     @Autowired
     private StatisticService statisticService;
 
-    
     public StatisticController(StatisticService statisticService) {
         this.statisticService = statisticService;
     }
+    
+    private final static Logger logger = LoggerFactory.getLogger(StatisticController.class.getName());
 
     // Create
     @PostMapping("")
@@ -33,7 +34,6 @@ public class StatisticController {
         Statistic newStatistic = statisticService.saveStatistic(statistic);
         return new ResponseEntity<>(newStatistic, HttpStatus.CREATED);
     }
-    
 
     // Read All
     @GetMapping("")
@@ -49,7 +49,6 @@ public class StatisticController {
         Statistic foundStatistic = statisticService.getStatistic(id);
         return new ResponseEntity<>(foundStatistic, HttpStatus.OK);
     }
-    
 
     // Update
     @PutMapping("{id}")
@@ -58,7 +57,6 @@ public class StatisticController {
         Statistic updatedStatistic = statisticService.updateStatistic(id, statistic);
         return new ResponseEntity<>(updatedStatistic, HttpStatus.OK);
     }
-    
 
     // Delete
     @DeleteMapping("{id}")

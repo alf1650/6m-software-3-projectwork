@@ -69,5 +69,5 @@ public class PlayerController {
         return new ResponseEntity<>(newStatistic, HttpStatus.CREATED);
     }
 
-    }
 }
+
