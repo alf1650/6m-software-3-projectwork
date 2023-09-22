@@ -26,11 +26,14 @@ public class PlayerControllerTest {
   @Autowired
   private ObjectMapper objectMapper;
 
+  private static final String AUTH_TOKEN_HEADER_NAME = "X-API-KEY";
+  private static final String AUTH_TOKEN = "chickendinner";
+
   @DisplayName("Get player by Id")
   @Test
   public void getPlayerByIdTest() throws Exception {
     // Step 1: Build a request
-    RequestBuilder request = MockMvcRequestBuilders.get("/players/1");
+    RequestBuilder request = MockMvcRequestBuilders.get("/players/1").header(AUTH_TOKEN_HEADER_NAME, AUTH_TOKEN);
 
     // Step 2: Perform the request, get the response and assert
     mockMvc.perform(request)
@@ -46,7 +49,7 @@ public class PlayerControllerTest {
   @Test
   public void getAllPlayersTest() throws Exception {
     // Step 1: Build a GET request to /customers
-    RequestBuilder request = MockMvcRequestBuilders.get("/players");
+    RequestBuilder request = MockMvcRequestBuilders.get("/players").header(AUTH_TOKEN_HEADER_NAME, AUTH_TOKEN);
 
     // Step 2: Perform the request, get the response and assert
     mockMvc.perform(request)
@@ -77,7 +80,8 @@ public class PlayerControllerTest {
     // Step 3: Build the request
     RequestBuilder request = MockMvcRequestBuilders.post("/players")
         .contentType(MediaType.APPLICATION_JSON)
-        .content(newCustomerAsJSON);
+        .content(newCustomerAsJSON)
+        .header(AUTH_TOKEN_HEADER_NAME, AUTH_TOKEN);
 
     // Step 4: Perform the request, get response and assert
     mockMvc.perform(request)
@@ -102,7 +106,7 @@ public class PlayerControllerTest {
 
     // Step 3: Build the request
     RequestBuilder request = MockMvcRequestBuilders.post("/players").contentType(MediaType.APPLICATION_JSON)
-        .content(invalidPlayerAsJSON);
+        .content(invalidPlayerAsJSON).header(AUTH_TOKEN_HEADER_NAME, AUTH_TOKEN);
 
     // Step 4: Perform the request and get the response and assert
     mockMvc.perform(request)
