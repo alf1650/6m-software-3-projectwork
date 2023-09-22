@@ -44,3 +44,118 @@
 2023-09-22 13:49:58.215 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-09-22 13:49:58.217 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-09-22 13:49:58.219 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-09-23 00:03:09.475 [main] INFO  s.n.e.s.SimplePlayerStatsApplication - 🟢 Starting SimplePlayerStatsApplication
+2023-09-23 00:03:09.476 [main] WARN  s.n.e.s.SimplePlayerStatsApplication - 🟠 Test Warning
+2023-09-23 00:03:09.476 [main] ERROR s.n.e.s.SimplePlayerStatsApplication - 🔴 Error Warning
+2023-09-23 00:03:09.541 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - 🟢 Starting SimplePlayerStatsApplication
+2023-09-23 00:03:09.542 [restartedMain] WARN  s.n.e.s.SimplePlayerStatsApplication - 🟠 Test Warning
+2023-09-23 00:03:09.542 [restartedMain] ERROR s.n.e.s.SimplePlayerStatsApplication - 🔴 Error Warning
+2023-09-23 00:03:09.660 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-09-23 00:03:09.663 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Starting SimplePlayerStatsApplication using Java 17.0.8 on Alfreds-Mini with PID 10415 (/Users/alfredlim/sctp/6m-software-3-projectwork/simple-player-stats-jpa/target/classes started by alfredlim in /Users/alfredlim/sctp/6m-software-3-projectwork/simple-player-stats-jpa)
+2023-09-23 00:03:09.663 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-23 00:03:09.681 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-23 00:03:09.682 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-23 00:03:09.951 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-23 00:03:09.967 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-09-23 00:03:10.191 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-23 00:03:10.194 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-23 00:03:10.195 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-23 00:03:10.195 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-23 00:03:10.222 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-23 00:03:10.222 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 540 ms
+2023-09-23 00:03:10.272 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-23 00:03:10.289 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-09-23 00:03:10.341 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-23 00:03:10.372 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-09-23 00:03:10.410 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-09-23 00:03:10.416 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-09-23 00:03:10.648 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-23 00:03:10.652 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23 00:03:10.905 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-23 00:03:11.000 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-09-23 00:03:11.041 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-09-23 00:03:11.075 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-23 00:03:11.081 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-23 00:03:11.182 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Started SimplePlayerStatsApplication in 1.637 seconds (JVM running for 1.839)
+2023-09-23 00:03:39.841 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-23 00:03:39.841 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-23 00:03:39.842 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-09-23 00:03:39.880 [http-nio-8080-exec-2] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@77d9fdd9
+2023-09-23 00:03:44.785 [http-nio-8080-exec-3] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@10bfdf16
+2023-09-23 00:03:45.341 [http-nio-8080-exec-4] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@62aad9af
+2023-09-23 00:03:45.783 [http-nio-8080-exec-5] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@66da8c82
+2023-09-23 00:06:13.442 [http-nio-8080-exec-7] INFO  s.n.e.s.service.PlayerServiceImpl - Fetching all players
+2023-09-23 00:20:23.924 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m40s483ms).
+2023-09-23 00:36:50.062 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m56s126ms).
+2023-09-23 00:39:17.718 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m27s656ms).
+2023-09-23 00:43:27.426 [http-nio-8080-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2023-09-23 00:43:32.816 [http-nio-8080-exec-10] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@5a904e2e
+2023-09-23 00:46:08.590 [http-nio-8080-exec-9] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@35581c1a
+2023-09-23 00:47:00.207 [http-nio-8080-exec-1] INFO  s.n.e.s.c.StatisticController - Fetching statistic with ID: 1
+2023-09-23 00:47:35.563 [http-nio-8080-exec-10] INFO  s.n.e.s.c.StatisticController - Fetching statistic with ID: 2
+2023-09-23 00:48:06.570 [http-nio-8080-exec-8] INFO  s.n.e.s.c.StatisticController - Fetching statistic with ID: 1
+2023-09-23 00:48:34.081 [http-nio-8080-exec-2] INFO  s.n.e.s.c.StatisticController - Updating statistic with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@6810bd67
+2023-09-23 00:48:48.539 [http-nio-8080-exec-9] INFO  s.n.e.s.c.StatisticController - Fetching statistic with ID: 1
+2023-09-23 00:49:02.149 [http-nio-8080-exec-3] INFO  s.n.e.s.c.StatisticController - Updating statistic with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@2cd333e2
+2023-09-23 00:49:02.866 [http-nio-8080-exec-4] INFO  s.n.e.s.c.StatisticController - Updating statistic with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@10a99713
+2023-09-23 00:49:03.554 [http-nio-8080-exec-6] INFO  s.n.e.s.c.StatisticController - Updating statistic with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@42ead45f
+2023-09-23 00:49:04.174 [http-nio-8080-exec-5] INFO  s.n.e.s.c.StatisticController - Updating statistic with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@5e17b923
+2023-09-23 00:49:04.886 [http-nio-8080-exec-7] INFO  s.n.e.s.c.StatisticController - Updating statistic with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@a7bd971
+2023-09-23 00:49:22.065 [http-nio-8080-exec-1] INFO  s.n.e.s.c.StatisticController - Updating statistic with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@108ceaa3
+2023-09-23 00:49:32.565 [http-nio-8080-exec-10] INFO  s.n.e.s.c.StatisticController - Deleting statistic with ID: 1
+2023-09-23 00:49:47.358 [http-nio-8080-exec-8] INFO  s.n.e.s.c.StatisticController - Fetching statistic with ID: 1
+2023-09-23 00:49:47.363 [http-nio-8080-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [sg.ntu.edu.simpleplayerstats.exception.StatisticNotFoundException: Could not find statisic 1]
+2023-09-23 00:49:52.255 [http-nio-8080-exec-2] INFO  s.n.e.s.c.StatisticController - Fetching statistic with ID: 2
+2023-09-23 00:53:08.973 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-23 00:53:08.982 [Thread-4] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-09-23 00:53:08.982 [Thread-4] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-09-23 00:53:08.982 [Thread-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-23 00:53:08.984 [Thread-4] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-09-23 00:53:08.985 [Thread-4] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-09-23 00:53:08.989 [Thread-4] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23 00:53:08.991 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-09-23 00:53:08.993 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-09-23 00:53:09.016 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - 🟢 Starting SimplePlayerStatsApplication
+2023-09-23 00:53:09.016 [restartedMain] WARN  s.n.e.s.SimplePlayerStatsApplication - 🟠 Test Warning
+2023-09-23 00:53:09.016 [restartedMain] ERROR s.n.e.s.SimplePlayerStatsApplication - 🔴 Error Warning
+2023-09-23 00:53:09.043 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Starting SimplePlayerStatsApplication using Java 17.0.8 on Alfreds-Mini with PID 10415 (/Users/alfredlim/sctp/6m-software-3-projectwork/simple-player-stats-jpa/target/classes started by alfredlim in /Users/alfredlim/sctp/6m-software-3-projectwork/simple-player-stats-jpa)
+2023-09-23 00:53:09.043 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-23 00:53:09.125 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-23 00:53:09.128 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2023-09-23 00:53:09.174 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-23 00:53:09.175 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-23 00:53:09.175 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-23 00:53:09.175 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-23 00:53:09.179 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-23 00:53:09.179 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 135 ms
+2023-09-23 00:53:09.195 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-23 00:53:09.196 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-09-23 00:53:09.203 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-09-23 00:53:09.203 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-09-23 00:53:09.242 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-23 00:53:09.242 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23 00:53:09.309 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-23 00:53:09.345 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-09-23 00:53:09.358 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-09-23 00:53:09.376 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-23 00:53:09.377 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-23 00:53:09.416 [restartedMain] INFO  s.n.e.s.SimplePlayerStatsApplication - Started SimplePlayerStatsApplication in 0.398 seconds (JVM running for 1823.087)
+2023-09-23 00:53:09.417 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-09-23 00:53:16.812 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-23 00:53:16.812 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-23 00:53:16.814 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-09-23 00:53:16.820 [http-nio-8080-exec-2] INFO  s.n.e.s.service.PlayerServiceImpl - Searching for players with first name: Ben
+2023-09-23 00:53:25.847 [http-nio-8080-exec-4] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@6023730a
+2023-09-23 00:53:27.286 [http-nio-8080-exec-5] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@734b955a
+2023-09-23 00:53:28.109 [http-nio-8080-exec-6] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@18dce6c8
+2023-09-23 00:53:28.871 [http-nio-8080-exec-7] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@3b0d5a52
+2023-09-23 00:53:29.439 [http-nio-8080-exec-8] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@71d902fa
+2023-09-23 00:53:29.989 [http-nio-8080-exec-9] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@27bbb06b
+2023-09-23 00:53:30.519 [http-nio-8080-exec-10] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@49660dcc
+2023-09-23 00:53:31.039 [http-nio-8080-exec-1] INFO  s.n.e.s.service.PlayerServiceImpl - Adding statistic to player with ID 1: sg.ntu.edu.simpleplayerstats.entity.Statistic@3b0acd1a
+2023-09-23 00:53:34.007 [http-nio-8080-exec-2] INFO  s.n.e.s.c.StatisticController - Fetching statistic with ID: 2
+2023-09-23 00:53:34.639 [http-nio-8080-exec-3] INFO  s.n.e.s.c.StatisticController - Fetching statistic with ID: 2
+2023-09-23 00:54:12.084 [http-nio-8080-exec-4] INFO  s.n.e.s.c.StatisticController - Updating statistic with ID 2: sg.ntu.edu.simpleplayerstats.entity.Statistic@65ff9efc
+2023-09-23 00:55:09.166 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-23 00:55:09.167 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-09-23 00:55:09.168 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
