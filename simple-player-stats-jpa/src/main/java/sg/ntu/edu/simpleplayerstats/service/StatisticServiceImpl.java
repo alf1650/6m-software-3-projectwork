@@ -38,7 +38,6 @@ public class StatisticServiceImpl implements StatisticService {
         statisticToUpdate.setGoals(statistic.getGoals());
         statisticToUpdate.setMatchDate(statistic.getMatchDate());
         statisticToUpdate.setOpposition(statistic.getOpposition());
-        statisticToUpdate.setMatchDate(statistic.getMatchDate());
         return statisticRepository.save(statisticToUpdate);
     }
 
