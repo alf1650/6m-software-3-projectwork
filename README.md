@@ -2,7 +2,7 @@
  
 # Project 3 - Backend Fundamentals With Java Spring Boot and Databases
  
-# Soccer Stats API
+# Player Stats API
 Soccer Stats API is your go-to database, providing comprehensive information on the statistics of each soccer player for the current Premier League season.
 You will be able to search up on players’ statistics based on their characteristics and even update the scores on your own. Stay updated on the goals and assists scored by each player against the opposing club with ease.
  
