@@ -1,6 +1,6 @@
 # NTU SCTP in Software Engineering
  
-# Project 2 - Backend Fundamentals With Java Spring Boot and Databases
+# Project 3 - Backend Fundamentals With Java Spring Boot and Databases
  
 # Soccer Stats API
 Soccer Stats API is your go-to database, providing comprehensive information on the statistics of each soccer player for the current Premier League season.
